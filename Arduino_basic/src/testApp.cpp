@@ -35,6 +35,17 @@ void testApp::draw(){
 
 }
 
+void testApp::analogPinChanged(const int &pinNum){
+    
+}
+
+void testApp::delay(int msec){
+    long delayTime = ofGetElapsedTimeMillis() + msec;
+    
+    while (delayTime >= ofGetElapsedTimeMillis()) {
+    }
+}
+
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
 
