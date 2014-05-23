@@ -7,7 +7,6 @@ void testApp::setup(){
     ofSetFrameRate(60);
 
     ard.connect("/dev/cu.usbmodemfd121", 57600);
-    
     //ard.connect("/dev/cu.usbmodemfa131", 57600);
     
     ofAddListener(ard.EInitialized, this, &testApp::setupArduino);
@@ -18,7 +17,6 @@ void testApp::setupArduino(const int &version){
     ofRemoveListener(ard.EInitialized, this, &testApp::setupArduino);
     
     ard.sendDigitalPinMode(9, ARD_PWM);
-    
     ard.sendAnalogPinReporting(0, ARD_ANALOG);
     
     ofAddListener(ard.EAnalogPinChanged, this, &testApp::analogPinChanged);
