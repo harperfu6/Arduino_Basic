@@ -45,7 +45,6 @@ void testApp::delay(int msec){
     long delayTime = ofGetElapsedTimeMillis() + msec;
     
     while (delayTime >= ofGetElapsedTimeMillis()) {
-        
     }
 }
 
