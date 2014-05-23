@@ -3,7 +3,9 @@
 #include "ofMain.h"
 
 class testApp : public ofBaseApp{
+    
 public:
+    
     void setup();
     void update();
     void draw();
@@ -22,6 +24,8 @@ public:
     ofArduino ard;
     
 private:
+    
     void setupArduino(const int &version);
     void analogPinChanged(const int &pinNum);
+    
 };
