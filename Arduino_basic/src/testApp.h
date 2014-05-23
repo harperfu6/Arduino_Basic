@@ -19,6 +19,7 @@ public:
     void windowResized(int w, int h);
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
+    void analogPinChanged(const int &pinNum);
     void delay(int msec);
     
     ofArduino ard;
@@ -26,6 +27,4 @@ public:
 private:
     
     void setupArduino(const int &version);
-    void analogPinChanged(const int &pinNum);
-    
 };
